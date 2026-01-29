@@ -10,6 +10,7 @@ public class ForEach {
             }
             System.out.println();
         }
+        // other way
 //        for (int i=0; i<arr.length; i++){
 //            for (int ele : arr[i]){
 //                System.out.print(ele + " ");
