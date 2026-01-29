@@ -11,6 +11,20 @@ public class BubbleSort {
         int[] arr = {0,1,-2,4,7,2,8,1,-1};
         print(arr);
         int n = arr.length;
+        // BubbleSort Optimised ye wala jyada better hai dono se because of boolean cause it takes less space
+
+        for (int i = 0; i < n-1; i++) {
+            boolean isSorted = true;
+            for (int j = 0; j < n-1-i; j++) {
+                if (arr[j]>arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                    isSorted = false;
+                }
+            }
+            if (isSorted) break;
+        }
 
 //        for (int i=n-1; i>0; i--) {
 //            int min = Integer.MIN_VALUE;
@@ -53,20 +67,6 @@ public class BubbleSort {
 //            }
 //        }
 
-        // BubbleSort Optimised ye wala jyada better hai dono se because of boolean cause it takes less space
-
-        for (int i = 0; i < n-1; i++) {
-            boolean isSorted = true;
-            for (int j = 0; j < n-1-i; j++) {
-                if (arr[j]>arr[j+1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                    isSorted = false;
-                }
-            }
-            if (isSorted) break;
-        }
 
         // BubbleSort Optimised dusra wala
 
