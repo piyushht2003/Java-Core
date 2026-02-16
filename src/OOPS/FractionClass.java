@@ -27,21 +27,29 @@ class Fraction{
         void divide(Fraction a){
             num = num * a.num;
             den = den * a.den;
+            simplify();
         }
 
-    void add(Fraction b) {
+        void add(Fraction b) {
             this.num = this.num * b.den + this.den * b.num;
             this.den = this.den * b.den;
             simplify();
-    }
+        }
+        void subtract(Fraction b) {
+            this.num = this.num * b.den - this.den * b.num;
+            this.den = this.den * b.den;
+            simplify();
+        }
 }
 public class FractionClass {
     public static void main(String[] args) {
         Fraction a = new Fraction(3,7);
         Fraction b = new Fraction(4,8);
-//        a.add(b);
-//        a.print();
+        a.add(b);
+        a.print();
         b.divide(a);
+        b.print();
+        a.subtract(b);
         a.print();
     }
 }
