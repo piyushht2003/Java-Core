@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.SortingAlgo;
 
 public class BubbleSort {
     public static void print(int arr[]){
@@ -39,32 +39,6 @@ public class BubbleSort {
 //            int temp = arr[i];
 //            arr[i] = arr[mindx];
 //            arr[mindx] = temp;
-//        }
-
-        // Selection Sort
-//        for (int i=0; i<n-1; i++){
-//            int min = Integer.MAX_VALUE;
-//            int mindx = 10;
-//            for (int j = i; j < n; j++) {
-//                if (arr[j]<min){
-//                    min = arr[j];
-//                    mindx = j;
-//
-//                }
-//            }
-//            int temp = arr[i];
-//            arr[i] = arr[mindx];
-//            arr[mindx] = temp;
-//        }
-
-//        for (int i = 0; i < n-1; i++) {
-//            for (int j = 0; j < n-1-i; j++) {
-//                if (arr[j]>arr[j+1]){
-//                    int temp = arr[j];
-//                    arr[j] = arr[j+1];
-//                    arr[j+1] = temp;
-//                }
-//            }
 //        }
 
 
