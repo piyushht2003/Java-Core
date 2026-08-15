@@ -23,7 +23,7 @@ public class ParanthesisChecker {
         return st.size()==0;
     }
 
-    boolean sameBrackets(char top, char ch) {
+    boolean sameBrackets(char a, char b) {
         if(a=='[' && b==']') return true;
         if(a=='{' && b=='}') return true;
         if(a=='(' && b==')') return true;
